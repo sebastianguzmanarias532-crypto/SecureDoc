@@ -1,0 +1,368 @@
+/*==================================================
+                SECUREDOC 2.0
+      Sistema de Gestión Documental Segura
+==================================================*/
+
+
+/*==================================================
+                    VARIABLES
+==================================================*/
+
+:root{
+  --primary:#1F4E99;
+  --primary-dark:#163D7A ;
+
+  --secondary:#4A90E2;
+
+  --background:#EAF5FC;
+
+  --withe:#FFFFFF;
+
+  --text:#1F2937;
+
+  --text-light:#6B7280;
+
+  --success:#22C55E;
+
+  --warning:#F59E0B;
+
+  --danger:#EF4444;
+
+  --radius:18px;
+
+  --shadow:0 10px 25px rgba(0,0,0,.12);
+
+  --transition:.30s ease;
+}
+
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/*==================================================
+                    BODY
+==================================================*/
+
+body{
+  font-family: "segoe UI",Tahoma,Geneva,Verdana,sans-serif ;
+  background: liner-gradient(135deg,#d9ecf6,#d7f3ff);
+  color: var(--text);
+}
+
+/*==================================================
+                  ENLACES
+==================================================*/
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*==================================================
+                  TITULOS
+==================================================*/
+
+h1{
+  color: var(--primary);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+h2{
+  color: var(--primary);
+  font-size: 34px;
+}
+
+h3{
+  color: var(--primary);
+  font-size: 24px;
+}
+
+/*==================================================
+                    HEADER
+==================================================*/
+
+.topbar{
+  height:80px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.20);
+}
+
+/*==================================================
+                    LOGO
+==================================================*/
+
+
+.logoArea{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logoHeader{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+ }
+
+.logoArea h1{
+  color: white;
+  margin: 0;
+  font-size: 32px;
+}
+
+.logoArea p{
+  color: #E6EEF9;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+/*==================================================
+              USUARIO SUPERIOR
+==================================================*/
+
+
+.usuarioTop{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+}
+
+.usuarioTop i{
+  font-size: 22px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.usuarioTop i:hover{
+  transform: scale(1.10);
+}
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+
+.footerDashboard{
+  margin-top: 60px;
+  padding: 25px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+/*==================================================
+                    BOTONES
+==================================================*/
+
+
+button{
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+button:hover{
+  transform: translateY(-3px);
+}
+
+.btnPrincipal,
+.btnNuevo,
+.btnNuevo{
+  background: var(--primary);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.btnPrincipal:hover,
+.btnNuevo:hover,
+.btnVolver:hover{
+  background: var(--primary-dark);
+}
+
+/*==================================================
+                  TARJETAS
+==================================================*/
+
+
+.card{
+  background: var(--withe);
+  border-radius: var(--radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.card:hover{
+  transform: translateY(-8px);
+}
+
+.hero{
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin-bottom: 35px;
+}
+
+.hero p{
+  color: var(--text-light);
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/*==================================================
+                BARRA DE HERRAMIENTAS
+==================================================*/
+
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/*==================================================
+                    INPUTS
+==================================================*/
+
+
+input,
+select{
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+input:focus,
+select:focus{
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(74,144,226,.20);
+}
+
+.searchBox{
+  width: 340px;
+  max-width: 100%;
+}
+
+/*==================================================
+                    TABLAS
+==================================================*/
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th{
+  background: var(--primary);
+  color: white;
+  padding: 18px;
+  font-size: 15px;
+}
+
+td{
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+}
+
+tr:hover{
+  background: #f5f9ff;
+}
+
+/*==================================================
+                    ESTADOS
+==================================================*/
+
+
+.estado{
+  padding: 6px 14px;
+  border-radius: 30px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.activo{
+  background: var(--success);
+}
+
+.pendiente{
+  background: var(--warning);
+}
+
+.inactivo{
+  background: var(--danger);
+}
+
+/*==================================================
+                    ACCIONES
+==================================================*/
+
+
+.acciones{
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.acciones i{
+  cursor: pointer;
+  font-size: 18px;
+  transition: var(--transition);
+}
+
+.fa-eye{
+  color: #1F4E99;
+}
+
+.fa-pen{
+  color: #F59E0B;
+}
+
+.fa-trash{
+  color: EF4444;
+}
+
+.acciones i:hover{
+  transform: scale(1.25);
+}
+
+/*==================================================
+                    VOLVER
+==================================================*/
+
+
+.volver{
+  text-align: center;
+  margin-top: 35px;
+}

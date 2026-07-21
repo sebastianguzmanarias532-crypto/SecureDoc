@@ -1,0 +1,413 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family:Arial, Helvetica, sans-serif ;
+
+  background: linear-gradient(135deg,#d9ecf6ff,#d7f3ff);
+}
+
+.login-container{
+  width: 420px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow:0 15px 35px rgba(0,0,0,.15) ;
+}
+
+h1{
+  text-align: center;
+  color: #0D3B66;
+  font-size: 46px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h3{
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+}
+
+input{
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+}
+
+.registro{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.registro{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.opcion{
+  width: 220px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+  transition: .3s;
+}
+
+.opcion:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.20);
+  cursor: pointer;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+th{
+  background: #0F3D91;
+  color: white;
+  padding: 15px;
+}
+
+td{
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:hover{
+  background: #f4f8ff;
+}
+
+th{
+  background-color: #f2f2f2;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.botones button{
+  background: #0F3D91;
+  color: white;
+  border: none;
+  padding: 15px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.botones button:hover{
+  background: #1658d3;
+  transform: translateY(-3px);
+}
+
+.subtitulo{
+  text-align: center;
+  font-size: 20px;
+  color: #5b6575;
+  margin-top: -5px;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.logo{
+  width: 220px;
+  display: block;
+  margin: 10px auto 15px auto;
+}
+
+header{
+  background: #0F3D91;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0.2);
+}
+.logoHeader{
+  width: 60px;
+  margin-right: 15px;
+}
+header h1{
+  margin: 0;
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+}
+header p{
+  margin: 0;
+  color: #E3F2FD;
+  font-size: 18px;
+}
+.contenedor{
+  width: 90%;
+  margin: 40px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+.contenedor h2{
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 35px;
+  color: #0F3D91;
+}
+.bienvenida{
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 35px;
+}
+.estadisticas{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.card{
+  width: 180px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+  transition: .3s;
+}
+.card:hover{
+  transform: translateY(-6px);
+}
+.card span{
+  display: block;
+  font-size: 42px;
+  color: #0F3D91;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.menu a{
+  text-decoration: none;
+  color: inherit;
+}
+.opcion{
+  text-decoration: none;
+}
+
+.opcion p{
+  color: #555;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/*==========================
+      DASHBOARD 2.0
+==========================*/
+
+.dashboardContainer{
+  width: 90%;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1d4698;
+  padding: 12px 40px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.35);
+}
+
+.logoArea{
+  color: white;
+  margin: 0;
+  font-size: 45px;
+}
+
+.logoArea h1{
+  margin-top: 5px;
+  color: white;
+  font-size: 32px;
+}
+
+.logoArea p{
+  margin-top: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+.usuarioTop{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.hero{
+  background: white;
+  border-radius: 20px;
+  padding: 25px 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  margin-bottom: 40px;
+}
+
+.hero h2{
+  color: #17469c;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p{
+  font-size: 20px;
+  color: #555;
+}
+
+.estadisticas{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.card{
+  width: 220px;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  transition: .3s;
+}
+
+.card:hover{
+  transform: translateY(-8px) scale(1.03);
+}
+
+.card i{
+  font-size: 42px;
+  color: #17469c;
+}
+
+.card h3{
+  margin: 20px 0;
+}
+
+.card span{
+  font-size: 50px;
+  color: #17469c;
+  font-weight: bold;
+}
+
+.accesosRapidos h3{
+  text-align: center;
+  color: #17469c;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.quickGrid{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.quickCard{
+  width: 170px;
+  background:white;
+  padding: 30px;
+  text-decoration: none;
+  color: #17469c;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  transition: .3s;
+}
+
+.quickCard:hover{
+  transform: translateY(-10px);
+}
+
+.quickCard i{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.quickCard span{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.actividad{
+  margin-top: 20px;
+}
+
+.actividad h3{
+  color: #17469c;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.tablaActividad{
+  width: 100%;
+  border-collapse:collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.tablaActividad th{
+  background: #17469c;
+  color: white;
+  padding: 18px;
+}
+
+.tablaActividad td{
+  padding: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tablaActividad tr:hover{
+  background: #f3f8ff;
+}
+
+.footerDashboard{
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+

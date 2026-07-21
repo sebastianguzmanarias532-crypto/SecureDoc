@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SecureDoc - Gestion de Usuarios</title>
+
+  <link rel="stylesheet" href="css/style-old.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <div class="logoArea">
+    <img src="img/logo.png" class="logoHeader" alt="logo SecureDoc">
+
+    <div>
+      <h1>SecureDoc</h1>
+      <p>Sistema de Gestion Documental Segura</p>
+    </div>
+
+  </div>
+
+  <div class="usuarioTop">
+    <i class="fa-solid fa-bell"></i>
+  </div>
+
+</header>
+
+<div class="dashboardContainer">
+  <section class="hero">
+    <h2><i class="fa-solid fa-users"></i> Gestion de Usuarios</h2>
+
+    <p>
+      Administra las cuentas de acceso del sistema SecureDoc.
+    </p>
+
+  </section>
+
+  <section class="toolbar">
+    <input type="text" placeholder="Buscar usuario..." class="searchBox">
+
+    <button class="btnNuevo">
+      <i class="fa-solid fa-user-plus"></i>
+      Nuevo Usuario
+    </button>
+  </section>
+
+  <section class="tablaUsuarios">
+
+    <table>
+
+      <tr>
+
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Rol</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+
+      </tr>
+
+      <tr>
+
+        <td>1</td>
+        <td>Sebastian Guzman</td>
+        <td>sebastian@gmail.com</td>
+        <td>Administrador</td>
+
+        <td>
+
+          <span class="estado Activo">
+            Activo
+          </span>
+
+        </td>
+
+        <td class="acciones">
+
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Gabriela Chaparro</td>
+        <td>gabriela@gmail.com</td>
+        <td>Usuario</td>
+
+        <td>
+
+          <span class="estado activo">
+            Activo
+          </span>
+
+        </td>
+
+        <td class="acciones">
+
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>3</td>
+        <td>Mateo Melo</td>
+        <td>mateoel@gmail.com</td>
+        <td>Auditor</td>
+
+        <td>
+          <span class="estado pendiente">
+            Pendiente
+          </span>
+
+        </td>
+
+        <td class="acciones">
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+  </section>
+
+  <div class="volver">
+    <a href="dashboard2.html">
+      <button class="btnVolver">
+        <i class="fa-solid fa-house"></i>
+        Volver al Panel
+
+      </button>
+
+    </a>
+
+  </div>
+
+</div>
+
+<footer class="footerDashboard">
+  © 2026 SecureDoc | Sistema de Gestión Documental Segura
+</footer>
+</body>
+</html>
+
+
+
+
+
