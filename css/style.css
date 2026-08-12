@@ -16,7 +16,7 @@
 
   --background:#EAF5FC;
 
-  --withe:#FFFFFF;
+  --white:#FFFFFF;
 
   --text:#1F2937;
 
@@ -52,7 +52,7 @@
 
 body{
   font-family: "segoe UI",Tahoma,Geneva,Verdana,sans-serif ;
-  background: liner-gradient(135deg,#d9ecf6,#d7f3ff);
+  background: linear-gradient(135deg,#d9ecf6,#d7f3ff);
   color: var(--text);
 }
 
@@ -70,19 +70,18 @@ a{
 ==================================================*/
 
 h1{
-  color: var(--primary);
-  font-size: 42px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 h2{
   color: var(--primary);
-  font-size: 34px;
+  font-size: 22px;
 }
 
 h3{
   color: var(--primary);
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /*==================================================
@@ -90,7 +89,7 @@ h3{
 ==================================================*/
 
 .topbar{
-  height:80px;
+  height: 80px;
   background: var(--primary);
   color: white;
   display: flex;
@@ -108,24 +107,26 @@ h3{
 .logoArea{
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 15px;
 }
 
 .logoHeader{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
  }
 
 .logoArea h1{
   color: white;
   margin: 0;
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .logoArea p{
-  color: #E6EEF9;
-  font-size: 16px;
+  color: #E3F2FD;
+  font-size: 13px;
   margin-top: 2px;
 }
 
@@ -137,18 +138,18 @@ h3{
 .usuarioTop{
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 15px;
   font-size: 18px;
 }
 
 .usuarioTop i{
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
-  transition: var(--transition);
+  transition: .3S;
 }
 
 .usuarioTop i:hover{
-  transform: scale(1.10);
+  transform: scale(1.08);
 }
 
 /*==================================================
@@ -157,8 +158,8 @@ h3{
 
 
 .footerDashboard{
-  margin-top: 60px;
-  padding: 25px;
+  margin-top: 20px;
+  padding: 15px;
   text-align: center;
   color: var(--text-light);
 }
@@ -202,30 +203,56 @@ button:hover{
 
 
 .card{
-  background: var(--withe);
-  border-radius: var(--radius);
-  padding: 25px;
+  width: 180px;
+  min-width: 220px;
+  max-width: 220px;
+  background: var(--white);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
   box-shadow: var(--shadow);
   transition: var(--transition);
 }
 
 .card:hover{
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.03);
+}
+
+.card i{
+  font-size: 28px;
+  color: var(--primary);
+}
+
+.card h3{
+  margin: 20px 0;
+}
+
+.card span{
+  display: block;
+  font-size: 32px;
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .hero{
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px 30px ;
   box-shadow: var(--shadow);
-  margin-bottom: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h2{
+  color: var(--primary);
+  font-size: 26px;
+  margin-bottom: 15px;
 }
 
 .hero p{
   color: var(--text-light);
+  font-size: 15px;
   margin-top: 10px;
-  font-size: 18px;
 }
 
 /*==================================================
@@ -305,23 +332,26 @@ tr:hover{
 
 
 .estado{
+  display: inline-block;
   padding: 6px 14px;
-  border-radius: 30px;
-  color: white;
+  border-radius: 20px;
   font-size: 13px;
   font-weight: bold;
 }
 
 .activo{
-  background: var(--success);
+  background: #C8F0CE;
+  color: #1B5E20;
 }
 
 .pendiente{
-  background: var(--warning);
+  background: #FFE4A3;
+  color: #8A5300;
 }
 
 .inactivo{
-  background: var(--danger);
+  background: #F8D7DA;
+  color: #C62828;
 }
 
 /*==================================================
@@ -350,7 +380,7 @@ tr:hover{
 }
 
 .fa-trash{
-  color: EF4444;
+  color: #EF4444;
 }
 
 .acciones i:hover{
@@ -365,4 +395,577 @@ tr:hover{
 .volver{
   text-align: center;
   margin-top: 35px;
+}
+
+/*==================================================
+                BUSCADOR
+==================================================*/
+
+
+.buscador{
+  width: 100%;
+  padding: 15px 18px;
+  font-size: 15px;
+  border: 1px solid #D9E2EC;
+  outline: none;
+  transition: .30s;
+  box-sizing: border-box;
+  background: white;
+  margin: 25px 0;
+}
+
+.buscador::placeholder{
+  color: #9AA5B1;
+}
+
+.buscador:focus{
+  border-color: #1F4AA8;
+  box-shadow: 0 0 10px rgba(31,74,168,.18);
+}
+
+/*==================================================
+                    ACCIONES
+==================================================*/
+
+
+.acciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.acciones i{
+  font-size: 17px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.acciones i:hover{
+  transform: scale(1.15);
+}
+
+/* Ver */
+
+.fa-eye{
+  color: #1F4AA8;
+}
+
+.fa-eye:hover{
+  color: #0D47A1;
+}
+
+/* Editar */
+
+.fa-pen{
+  color: #F9A825;
+}
+
+.fa-pen:hover{
+  color: #F57F17;
+}
+
+/* Eliminar */
+
+.fa-trash{
+  color: #3D2F2F;
+}
+
+.fa-trash:hover{
+  color: #B71C1C;
+}
+
+/*==================================================
+                  FORMULARIOS
+==================================================*/
+
+
+.formulario{
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-top: 30px;
+}
+
+.formRow{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.formGroup{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label{
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea{
+  padding: 14px;
+  border: 1px solid #D7DCE4;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: var(--transition);
+  background: white;
+}
+
+.formGroup textarea{
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus{
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(31,78,153,.15);
+}
+
+/*==================================================
+                    BADGES
+==================================================*/
+
+
+.badge{
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badgeAdmin{
+  background: #B8D4FF;
+  color: #0A2A6B;
+}
+
+.badgeUser{
+  background: #C8F0CE;
+  color: #1B5E20;
+}
+
+.badgeAudit{
+  background: #FFE4A3;
+  color: #8A5300;
+}
+
+.badgeDanger{
+  background: #FFE3E3;
+  color: #C62828;
+}
+
+/*==================================================
+                    ALERTAS
+==================================================*/
+
+
+.alert{
+  padding: 18px;
+  border-radius: 12px;
+  margin: 20px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.alertSuccess{
+  background: #E8F8EC;
+  color: #2E7D32;
+}
+
+.alertWarning{
+  background: #FFF5DD;
+  color: #B26A00;
+}
+
+.alertDanger{
+  background: #FFE4E6;
+  color: #C62828;
+}
+
+.alertInfo{
+  background: #EAF4FF;
+  color: #0F3D91;
+}
+
+/*==================================================
+                  RESPONSIVE
+==================================================*/
+
+
+@media (max-width: 900px) {
+  .topbar{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .logoArea{
+    justify-content: center;
+  }
+
+  .usuarioTop{
+    justify-content: center;
+  }
+
+  .dashboardContainer{
+    width: 95%;
+  }
+
+  .menu{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opcion{
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .estadisticas{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .formRow{
+    flex-direction: column;
+  }
+
+  .botones{
+    flex-direction: column;
+  }
+
+  table{
+    display: block;
+    overflow-x:auto ;
+  }
+
+}
+
+/*==================================================
+                DASHBOARD
+==================================================*/
+
+
+.dashboardContainer{
+  width: 90%;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+/*==================================================
+                ESTADISTICAS
+==================================================*/
+
+
+.estadisticas{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.estadisticas .card{
+  flex: 0 0 220px;
+}
+
+/*==================================================
+             ACCESOS RAPIDOS
+==================================================*/
+
+
+.accesosRapidos h3{
+  text-align: center;
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.quickGrid{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.quickCard{
+  flex: 0 0 170px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  transition: .3s;
+}
+
+.quickCard i{
+  display: block;
+  font-size: 22px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.quickCard span{
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/*==================================================
+                ACTIVIDAD
+==================================================*/
+
+
+.actividad{
+  margin-top: 60px;
+}
+
+.actividad h3{
+  text-align: center;
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.tablaActividad{
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.tablaActividad th{
+  background: var(--primary);
+  color: white;
+  padding: 18px;
+}
+
+.tablaActividad td{
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tablaActividad tr:hover{
+  background: #f3f8ff;
+}
+
+/*==================================================
+                    LOGIN
+==================================================*/
+
+
+
+.loginCard{
+  width: 100%;
+  max-width: 470px;
+  background: var(--white);
+  border-radius: 22px;
+  padding: 45px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.logoLogin{
+  width: 140px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.loginCard h1{
+  color: var(--primary);
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+
+.subtitulo{
+  color: var(--text-light);
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.loginCard form{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.loginCard .formGroup{
+  text-align: left;
+}
+
+.loginCard label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.loginCard label i{
+  color: var(--primary);
+  margin-right: 8px;
+}
+
+.loginCard input{
+  width: 100%;
+}
+
+.loginCard button{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.loginLinks{
+  margin-top: 18px;
+}
+
+.loginLinks a{
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.loginLinksa a:hover{
+  text-decoration: underline;
+}
+
+.registro{
+  margin-top: 30px;
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.registro a{
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.registro a:hover{
+  text-decoration: underline;
+}
+
+/*==================================================
+                LOGIN PAGE
+==================================================*/
+
+
+.loginpage{
+  min-height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.login-container{
+  width: 430px;
+  max-width: 100%;
+}
+
+
+/*==================================================
+                REGISTRO
+==================================================*/
+
+
+.registroPages{
+  min-height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.registroCard{
+  width: 100%;
+  max-width: 500px;
+  background: var(--white);
+  border-radius: 22px;
+  padding: 40px 45px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.logoRegistro{
+  width: 110px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.registroCard h1{
+  color: var(--primary);
+  font-size: 38px;
+  margin: 0 auto 15px;
+}
+
+.registroCard .subtitulo{
+  color: var(--text-light);
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.registroCard form{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.registroCard .formGroup{
+  text-align: left;
+}
+
+.registroCard label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.registroCard label i{
+  color: var(--primary);
+  margin-right: 8px;
+}
+
+.registroCard input{
+  width: 100%;
+}
+
+.registroCard button{
+  width: 100%;
+  margin-top: 8px;
+}
+
+.registroCard .registro{
+  margin-top: 25px;
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.registroCard .registro a{
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.registroCard .registro a:hover{
+  text-decoration: underline;
 }

@@ -1,43 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SecureDoc - Registro</title>
-  <link rel="stylesheet" href="css/style-old.css">
+
+  <title>SecureDoc | Registro</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
-<div class="login-container">
+<div class="registroPages">
 
-  <h1>Registro de Usuario</h1>
+  <div class="registroCard">
 
-  <form>
+    <!-- LOGO -->
 
-    <label>Nombre Completo</label>
-    <input type="text" placeholder="Ingrese su nombre">
+    <img
+      src="img/logo.png"
+      alt="Logo SecureDoc"
+      class="logoRegistro"
+      >
 
-    <label>Correo Electronico</label>
-    <input type="email" placeholder="Ingrese su correo">
+    <!-- TITULO -->
 
-    <label>Contraseña</label>
-    <input type="password" placeholder="Ingrese una contraseña">
+    <h1>Crear Cuenta</h1>
 
-    <label>Confirmar Contraseña</label>
-    <input type="password" placeholder="Confirme la contraseña">
+    <p class="subtitulo">
+      Sistema de Gestion Documental Segura
+    </p>
 
-    <button type="submit">Registrarse</button>
+    <!-- FORMULARIO -->
 
-  </form>
+    <form>
 
-  <p class="registro">
-    ¿Ya tienes cuenta?
-    <a href="index.html">Iniciar sesión</a>
-  </p>
+      <!-- NOMBRE -->
+
+      <div class="formGroup">
+
+        <label>
+          <i class="fa-solid fa-user"></i>
+          Nombre Completo
+        </label>
+
+        <input
+          type="text"
+          placeholder="Ingrese su nombre"
+          >
+
+      </div>
+
+      <!-- CORREO -->
+
+      <div class="formGroup">
+
+        <label>
+          <i class="fa-solid fa-envelope"></i>
+          Correo Electronico
+        </label>
+
+        <input
+          type="email"
+          placeholder="Ingrese su correo"
+          >
+
+      </div>
+
+      <!-- CONTRASEÑA -->
+
+      <div class="formGroup">
+
+        <label>
+          <i class="fa-solid fa-lock"></i>
+          Contraseña
+        </label>
+
+        <input
+          type="password"
+          placeholder="Ingrese una contraseña"
+          >
+
+      </div>
+
+      <!-- CONFIRMAR CONTRASEÑA -->
+
+      <div class="formGroup">
+
+        <label>
+          <i class="fa-solid fa-lock"></i>
+          Confirmar Contraseña
+        </label>
+
+        <input
+          type="password"
+          placeholder="Confirme la contraseña"
+          >
+
+      </div>
+
+      <!-- BOTON -->
+
+      <button
+        type="submit"
+        class="btnPrincipal"
+        >
+        <i class="fa-solid fa-user-plus"></i>
+        Crear Cuenta
+      </button>
+
+    </form>
+
+    <!-- VOLVER AL LOGIN -->
+
+    <p class="registro">
+
+      ¿Ya tienes cuenta?
+
+      <a href="index.html">
+        Iniciar Sesion
+      </a>
+
+    </p>
+
+  </div>
 
 </div>
 
+<footer class="footerDashboard">
+  © 2026 SecureDoc |
+  Desarrollado por Juan Sebastián Guzmán Arias
+</footer>
+
 </body>
+
 </html>
 
 

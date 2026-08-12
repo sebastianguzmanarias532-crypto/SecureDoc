@@ -3,39 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style-old.css">
+  <title>SecureDoc | Iniciar Sesion</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-<div class="login-container">
+<div class="loginpage">
+  <div class="loginCard">
 
-<img src="img/logo.png" alt="Logo SecureDoc" class="logo">
+<img src="img/logo.png" alt="Logo SecureDoc" class="logoLogin">
 
   <h1>SecureDoc</h1>
 
-  <p class="subtitulo">Gestion Documental Segura</p>
+  <p class="subtitulo">
+    Gestion Documental Segura
+  </p>
 
   <form>
 
-    <label>Correo Electronico</label>
-    <input type="email" placeholder="Ingrese su correo">
+    <div class="formGroup">
 
-    <label>Contraseña</label>
-    <input type="password" placeholder="Ingrese su contraseña">
+      <label>
+        <i class="fa-solid fa-envelope"></i>
+        Correo Electronico
+      </label>
 
-    <a href="dashboard.html">
-      <button type="button">Iniciar Sesión</button>
+      <input
+      type="email"
+      placeholder="Ingrese su correo">
+
+    </div>
+
+    <div class="formGroup">
+
+      <label>
+        <i class="fa-solid fa-lock"></i>
+        Contraseña
+      </label>
+
+      <input
+      type="password"
+      placeholder="Ingrese su contraseña">
+
+    </div>
+
+    <a href="dashboard2.html">
+
+      <button
+        type="button"
+        class="btnPrincipal">
+
+        <i class="fa-solid fa-right-to-bracket"></i>
+        Iniciar Sesion
+
+      </button>
+
     </a>
-
 
   </form>
 
-  <p class="Registro">
+  <div class="loginLinks">
+
+    <a href="#">
+      ¿Olvidaste tu contraseña?
+    </a>
+
+  </div>
+
+  <p class="registro">
     ¿No tienes cuenta?
-    <a href="registro.html">Registrate aqui</a>
+    <a href="registro.html">
+      Registrate aqui
+    </a>
+
   </p>
 
 </div>
 
+</div>
+
+<footer class="footerDashboard">
+  © 2026 SecureDoc |
+  Desarrollado por Juan Sebastián Guzmán Arias
+</footer>
+
 </body>
+
 </html>
