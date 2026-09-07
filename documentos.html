@@ -1,40 +1,347 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8">
-  <title>SecureDoc - Gestion Documental</title>
-  <link rel="stylesheet" href="css/style-old.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SecureDoc | Documentos</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
-<h1>Gestion de Documentos</h1>
+<!--==================================================
+                     HEADER
+ ==================================================-->
 
-<table>
-  <try>
-    <th>Documento</th>
-    <th>Nivel de seguridad</th>
-    <th>Fecha</th>
-  </try>
+<header class="topbar">
 
-  <tr>
-    <td>Contrato.pdf</td>
-    <td>Alto</td>
-    <td>19/06/2026</td>
-  </tr>
+  <div class="logoArea">
 
-  <tr>
-    <td>Informe.docx</td>
-    <td>Medios</td>
-    <td>12/08/2026</td>
-  </tr>
+    <img
+      src="img/logo.png"
+      class="logoHeader"
+      alt="Logo SecureDco">
 
-</table>
+    <div>
 
-<div class="botones">
-  <button>📤Subir</button>
-  <button>✏️Editar</button>
-  <button>🗑️Eliminar</button>
+      <h1>SecureDoc</h1>
+      <p>Sistema de Gestion Documental Segura</p>
+
+    </div>
+
+  </div>
+
+  <div class="usuarioTop">
+
+    <i class="fa-solid fa-bell"></i>
+    <span>Administrador</span>
+    <i class="fa-solid fa-circle-user"></i>
+
+  </div>
+
+</header>
+
+<!--==================================================
+                    CONTENIDO
+  ==================================================-->
+
+<div class="dashboardContainer">
+
+  <!--==============================
+                HERO
+    ==============================-->
+
+  <section class="hero">
+
+    <h2>
+      <i class="fa-solid fa-folder-open"></i>
+      Gestion de Documentos
+    </h2>
+
+    <p>
+      Administra, consulta y controla la seguridad de los documentos almacenados en SecureDoc.
+    </p>
+
+  </section>
+
+
+  <!--==============================
+            BARRA DE HERRAMIENTAS
+  ==============================-->
+
+  <div class="toolbar">
+
+    <input
+      type="text"
+      class="buscador"
+      placeholder="Buscar documento...">
+
+    <button class="btnNuevo">
+      <i class="fa-solid fa-upload"></i>
+      Subir Documento
+    </button>
+
+  </div>
+
+
+  <!--==============================
+                TABLA
+  ==============================-->
+
+  <table>
+
+    <thead>
+
+    <tr>
+
+      <th>Documento</th>
+      <th>Nivel de Seguridad</th>
+      <th>Fecha</th>
+      <th>Estado</th>
+      <th>Acciones</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <!-- DOCUMENTO 1 -->
+
+    <tr>
+
+      <td>
+
+        <div class="documentoNombre">
+
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>Contrato.pdf</span>
+
+        </div>
+
+      </td>
+
+      <td>
+
+        <span class="badge badgeDanger">
+          Alto
+        </span>
+
+      </td>
+
+      <td>
+        19/06/2026
+      </td>
+
+      <td>
+
+        <span class="estado activo">
+          Protegido
+        </span>
+
+      </td>
+
+      <td>
+
+        <div class="acciones">
+
+          <i class="fa-solid fa-eye"
+             title="ver"></i>
+          <i class="fa-solid fa-download"
+             title="Descargar"></i>
+          <i class="fa-solid fa-pen"
+             title="Editar"></i>
+          <i class="fa-solid fa-trash"
+             title="Eliminar"></i>
+
+        </div>
+
+      </td>
+
+    </tr>
+
+    <!-- DOCUMENTO 2 -->
+
+    <tr>
+
+      <td>
+
+        <div class="documentoNombre">
+
+        <i class="fa-solid fa-file-word"></i>
+        <span>Informe.docx</span>
+        </div>
+      </td>
+
+      <td>
+        <span class="badge badgeAudit">
+          Medio
+        </span>
+
+      </td>
+
+      <td>
+        12/08/2026
+      </td>
+
+      <td>
+        <span class="estado activo">
+          Protegido
+        </span>
+
+      </td>
+
+      <td>
+        <div class="acciones">
+
+          <i class="fa-solid fa-eye"
+             title="Ver"></i>
+          <i class="fa-solid fa-download"
+             title="Descargar"></i>
+          <i class="fa-solid fa-pen"
+             title="Editar"></i>
+          <i class="fa-solid fa-trash"
+             title="Eliminar"></i>
+
+        </div>
+
+      </td>
+
+    </tr>
+
+    <!-- DOCUMENTO 3 -->
+
+    <tr>
+      <td>
+        <div class="documentoNombre">
+        <i class="fa-solid fa-file-excel"></i>
+        <span>Reporte_ventas.xlsx</span>
+        </div>
+      </td>
+
+      <td>
+
+        <span class="badge badgeDanger">
+          Bajo
+        </span>
+
+      </td>
+
+      <td>
+        10/08/2026
+      </td>
+
+      <td>
+        <span class="estado pendiente">
+          Pendiente
+        </span>
+
+      </td>
+
+      <td>
+        <div class="acciones">
+
+          <i class="fa-solid fa-eye"
+             title="ver"></i>
+          <i class="fa-solid fa-download"
+             title="Descargar"></i>
+          <i class="fa-solid fa-pen"
+             title="Editar"></i>
+          <i class="fa-solid fa-trash"
+             title="Eliminar"></i>
+
+        </div>
+
+      </td>
+
+    </tr>
+
+    <!-- DOCUMENTO 4 -->
+
+    <tr>
+
+      <td>
+        <div class="documentoNombre">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Manual_Seguridad.docx</span>
+        </div>
+      </td>
+
+      <td>
+        <span class="badge badgeDanger">
+          Alto
+        </span>
+
+      </td>
+
+      <td>
+        05/08/2026
+      </td>
+
+      <td>
+        <span class="estado activo">
+          Protegido
+        </span>
+
+      </td>
+
+      <td>
+        <div class="acciones">
+
+          <i class="fa-solid fa-eye"
+             title="Ver"></i>
+          <i class="fa-solid fa-download"
+             title="Descargar"></i>
+          <i class="fa-solid fa-pen"
+             title="Editar"></i>
+          <i class="fa-solid fa-trash"
+             title="Eliminar"></i>
+
+        </div>
+
+      </td>
+
+    </tr>
+
+    </tbody>
+
+  </table>
+
+  <!--==============================
+                  VOLVER
+    ==============================-->
+
+  <div class="volver">
+
+    <button
+      class="btnVolver"
+      onclick="window.location.href='dashboard2.html'">
+
+      <i class="fa-solid fa-arrow-left"></i>
+      Volver al Dashboard
+    </button>
+
+  </div>
+
 </div>
+
+<!--==================================================
+                        FOOTER
+  ==================================================-->
+
+<footer class="footerDashboard">
+  © 2026 SecureDoc |
+  Desarrollado por Juan Sebastián Guzmán Arias
+</footer>
 
 </body>
 </html>

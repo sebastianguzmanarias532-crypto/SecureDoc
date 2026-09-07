@@ -345,8 +345,8 @@ tr:hover{
 }
 
 .pendiente{
-  background: #FFE4A3;
-  color: #8A5300;
+  background: #F8D7DA;
+  color: #C62828;
 }
 
 .inactivo{
@@ -869,7 +869,7 @@ tr:hover{
 
 
 .loginpage{
-  min-height: 100hv;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -889,7 +889,7 @@ tr:hover{
 
 
 .registroPages{
-  min-height: 100hv;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -969,3 +969,51 @@ tr:hover{
 .registroCard .registro a:hover{
   text-decoration: underline;
 }
+
+/*==================================================
+                DOCUMENTOS
+==================================================*/
+
+
+.documentoNombre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.documentoNombre i{
+  color: var(--primary);
+  font-size: 18px;
+}
+
+/* Iconos según tipo de archivo */
+
+.fa-file-pdf{
+  color: #D32F2F;
+}
+
+.fa-file-word{
+  color: #2563EB;
+}
+
+.fa-file-excel{
+  color: #16A34A;
+}
+
+.fa-file-lines{
+  color: var(--primary);
+}
+
+/*==================================================
+              ACCIONES DOCUMENTOS
+==================================================*/
+
+.acciones .fa-download{
+  color: var(--primary);
+}
+
+.acciones .fa-download:hover{
+  color: var(--primary-dark);
+}
+

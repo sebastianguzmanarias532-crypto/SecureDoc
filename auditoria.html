@@ -2,44 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SecureDoc - Auditoria</title>
-  <link rel="stylesheet" href="css/style-old.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureDoc | Auditoria</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
-<h1>Registro de Auditoria</h1>
+<!--==================================================
+                    HEADER
+==================================================-->
+
+<header class="topbar">
+
+  <div class="logoArea">
+
+    <img
+      src="img/logo.png"
+      class="logoHeader"
+      alt="Logo SecureDoc">
+
+    <div>
+
+      <h1>SecureDoc</h1>
+      <p>Sistema de Gestion Documental Segura</p>
+
+    </div>
+
+  </div>
+
+  <div class="usuarioTop">
+    <i class="fa-solid fa-bell"></i>
+    <span>Administrador</span>
+    <i class="fa-solid fa-circle-user"></i>
+
+  </div>
+</header>
+
+<!--==================================================
+                    CONTENIDO
+==================================================-->
+
+<div class="dashboardContainer">
 
 
-<table>
-  <tr>
-    <th>Usuario</th>
-    <th>Accion</th>
-    <th>Fecha</th>
-    <th>Hora</th>
-  </tr>
+  <!--==============================
+             ENCABEZADO
+ ==============================-->
 
-  <tr>
-    <td>Sebastian Guzman</td>
-    <td>Consulta Documento</td>
-    <td>15/06/2026</td>
-    <td>08:30</td>
-  </tr>
+<section class="hero">
 
-  <tr>
-    <td>Daniela Chaparro</td>
-    <td>Descarga Documento</td>
-    <td>15/06/2026</td>
-    <td>09:15</td>
-  </tr>
+  <h2>
 
-  <tr>
-    <td>Nataly Ricardo</td>
-    <td>Modificar Documento</td>
-    <td>16/06/2026</td>
-    <td>11:20</td>
-  </tr>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    Registro de Auditoria
+  </h2>
 
-</table>
+  <p>
+    Consulta las actividades realizadas por los usuarios dentro del sistema SecureDoc.
+  </p>
+
+</section>
+
+  <!--==============================
+                BUSCADOR
+  ==============================-->
+
+  <div class="toolbar">
+
+    <input
+      type="text"
+      class="buscador"
+      placeholder="Buscar usuario o accion..."
+      >
+
+  </div>
+
+
+  <!--==============================
+                TABLA
+  ==============================-->
+
+  <table class="tablaAuditor">
+
+    <thead>
+
+    <tr>
+
+      <th>Usuario</th>
+      <th>Accion</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr>
+
+      <td>
+        Sebastian Guzman
+      </td>
+
+      <td>
+
+        <i class="fa-solid fa-eye"></i>
+        Consulta Documento
+      </td>
+
+      <td>
+        15/06/2026
+      </td>
+
+      <td>
+        08:30
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+        Anyelina tiria
+      </td>
+
+      <td>
+        <i class="fa-solid fa-download"></i>
+        Descarga Documento
+      </td>
+
+      <td>
+        15/06/2026
+      </td>
+
+      <td>
+        09:15
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+        Nataly Ricardo
+      </td>
+
+      <td>
+
+        <i class="fa-solid fa-pen"></i>
+        Modificar Documento
+      </td>
+
+      <td>
+        16/06/2026
+      </td>
+
+      <td>
+        11:20
+      </td>
+
+    </tr>
+
+    </tbody>
+
+  </table>
+
+  <!--==============================
+             VOLVER
+ ==============================-->
+
+
+  <div class="volver">
+
+    <button
+      class="btnVolver"
+      onclick="window.location.href='dashboard2.html'">
+
+      <i class="fa-solid fa-arrow-left"></i>
+      Volver al Dashboard
+    </button>
+
+  </div>
+
+</div>
+
+<!--==================================================
+                      FOOTER
+==================================================-->
+
+<footer class="footerDashboard">
+  © 2026 SecureDoc |
+  Desarrollado por Juan Sebastián Guzmán Arias
+</footer>
 
 </body>
+
 </html>

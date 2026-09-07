@@ -1,73 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Reportes - SecureDoc</title>
 
-  <link rel="stylesheet" href="css/style-old.css">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SecureDoc | Reportes</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+<!--==================================================
+                    HEADER
+==================================================-->
 
-  <img src="img/logo.png" class="logoHeader">
+<header class="topbar">
 
-  <div>
+  <div class="logoArea">
 
-    <h1>SecureDoc</h1>
-    <p>Sistema de Gestion Documental Segura</p>
+    <img
+      src="img/logo.png"
+      class="logoHeader"
+      alt="Logo SecureDoc">
+
+    <div>
+
+      <h1>SecureDoc</h1>
+
+      <p>Sistema de Gestion Documental Segura</p>
+
+    </div>
+
+  </div>
+
+  <div class="usuarioTop">
+
+    <i class="fa-solid fa--bell"></i>
+
+    <span>Administrador</span>
+
+    <i class="fa-solid fa-circle-user"></i>
 
   </div>
 
 </header>
 
-<div class="contenedor">
+<!--==================================================
+                    CONTENIDO
+==================================================-->
 
-  <h2>📊 Reportes del Sistema</h2>
+<div class="dashboardContainer">
 
-  <table>
+
+  <!--==============================
+              ENCABEZADO
+  ==============================-->
+
+  <section class="hero">
+
+    <h2>
+
+      <i class="fa-solid fa-chart-column"></i>
+      Reportes del sistema
+    </h2>
+
+    <p>
+      Consulta, genera y descarga los reportes relacionados con la actividad de SecureDoc.
+    </p>
+
+  </section>
+
+  <!--==============================
+              TABLA
+==============================-->
+
+  <table class="tablaReportes">
+
+    <thead>
 
     <tr>
 
       <th>Reporte</th>
       <th>Fecha</th>
       <th>Estado</th>
+      <th>Acciones</th>
+
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr>
+
+      <td>
+
+        <i class="fa-solid fa-shield-halved"></i>
+        Reporte de Accesos
+      </td>
+
+      <td>
+        15/06/2026
+      </td>
+
+      <td>
+
+        <span class="estado activo">
+          Generado
+        </span>
+
+      </td>
+
+      <td>
+
+        <div class="acciones">
+
+          <i class="fa-solid fa-eye"
+             title="Ver reporte"></i>
+
+          <i class="fa-solid fa-download"
+             title="Descargar"></i>
+
+        </div>
+
+      </td>
 
     </tr>
 
     <tr>
 
-      <td>Reporte de Accesos</td>
-      <td>15/06/2026</td>
-      <td>Generado</td>
+      <td>
+
+        <i class="fa-solid fa-magnifying-glass-chart"></i>
+        Auditoria General
+      </td>
+
+      <td>
+        18/06/2026
+      </td>
+
+      <td>
+        <span class="estado activo">
+          Generado
+        </span>
+
+      </td>
+
+      <td>
+
+        <div class="acciones">
+
+          <i class="fa-solid fa-eye"
+             title="Ver reporte"></i>
+
+          <i class="fa-solid fa-download"
+             title="Descargar"></i>
+
+        </div>
+
+      </td>
 
     </tr>
 
-    <tr>
-
-      <td>Auditoria General</td>
-      <td>18/06/2026</td>
-      <td>Generado</td>
-
-    </tr>
+    </tbody>
 
   </table>
 
-  <div class="botones"</div>
+  <!--==============================
+             BOTONES
+ ==============================-->
 
-  <button>📄 Descargar PDF</button>
+  <div class="botones">
 
-  <button>📊 Exportar Excel</button>
+    <button class="btnPrincipal">
+      Descargar PDF
+    </button>
 
-  <a href="dashboard.html">
+    <button class="btnPrincipal">
 
-    <button>🏠 Volver al Menu</button>
-
-  </a>
+      <i class="fa-solid fa-file-excel"></i>
+      Exportar Excel
+    </button>
 
 </div>
+
+  <!--==============================
+             VOLVER
+ ==============================-->
+
+  <div class="volver">
+
+    <button
+      class="btnVolver"
+      onclick="window.location.href='dashboard2.html">
+
+      <i class="fa-solid fa-arrow-left"></i>
+      Volver al Dashboard
+    </button>
+
+  </div>
+
+</div>
+
+<!--==================================================
+                      FOOTER
+==================================================-->
+
+<footer class="footerDashboard">
+  © 2026 SecureDoc |
+  Desarrollado por Juan Sebastián Guzmán Arias
+
+</footer>
 
 </body>
 
