@@ -40,7 +40,7 @@
 
     <!-- FORMULARIO -->
 
-    <form>
+    <form action="registro.php" method="POST">
 
       <!-- NOMBRE -->
 
@@ -53,7 +53,9 @@
 
         <input
           type="text"
+          name="nombre_completo"
           placeholder="Ingrese su nombre"
+          required
           >
 
       </div>
@@ -69,7 +71,9 @@
 
         <input
           type="email"
+          name="correo"
           placeholder="Ingrese su correo"
+          required
           >
 
       </div>
@@ -85,7 +89,9 @@
 
         <input
           type="password"
+          name="password"
           placeholder="Ingrese una contraseña"
+          required
           >
 
       </div>
@@ -101,7 +107,9 @@
 
         <input
           type="password"
+          name="confirmar_password"
           placeholder="Confirme la contraseña"
+          required
           >
 
       </div>

@@ -14,46 +14,48 @@
 <div class="loginpage">
   <div class="loginCard">
 
-<img src="img/logo.png" alt="Logo SecureDoc" class="logoLogin">
+    <img src="img/logo.png" alt="Logo SecureDoc" class="logoLogin">
 
-  <h1>SecureDoc</h1>
+    <h1>SecureDoc</h1>
 
-  <p class="subtitulo">
-    Gestion Documental Segura
-  </p>
+    <p class="subtitulo">
+      Gestion Documental Segura
+    </p>
 
-  <form>
+    <form action="login.php" method="POST">
 
-    <div class="formGroup">
+      <div class="formGroup">
 
-      <label>
-        <i class="fa-solid fa-envelope"></i>
-        Correo Electronico
-      </label>
+        <label>
+          <i class="fa-solid fa-envelope"></i>
+          Correo Electronico
+        </label>
 
-      <input
-      type="email"
-      placeholder="Ingrese su correo">
+        <input
+          type="email"
+          name="correo"
+          placeholder="Ingrese su correo"
+          required>
 
-    </div>
+      </div>
 
-    <div class="formGroup">
+      <div class="formGroup">
 
-      <label>
-        <i class="fa-solid fa-lock"></i>
-        Contraseña
-      </label>
+        <label>
+          <i class="fa-solid fa-lock"></i>
+          Contraseña
+        </label>
 
-      <input
-      type="password"
-      placeholder="Ingrese su contraseña">
+        <input
+          type="password"
+          name="password"
+          placeholder="Ingrese su contraseña"
+          required>
 
-    </div>
-
-    <a href="dashboard2.html">
+      </div>
 
       <button
-        type="button"
+        type="submit"
         class="btnPrincipal">
 
         <i class="fa-solid fa-right-to-bracket"></i>
@@ -61,28 +63,24 @@
 
       </button>
 
-    </a>
+    </form>
 
-  </form>
+    <div class="loginLinks">
 
-  <div class="loginLinks">
+      <a href="#">
+        ¿Olvidaste tu contraseña?
+      </a>
 
-    <a href="#">
-      ¿Olvidaste tu contraseña?
-    </a>
+    </div>
+
+    <p class="registro">
+      ¿No tienes cuenta?
+      <a href="registro.html">
+        Registrate aqui
+      </a>
+    </p>
 
   </div>
-
-  <p class="registro">
-    ¿No tienes cuenta?
-    <a href="registro.html">
-      Registrate aqui
-    </a>
-
-  </p>
-
-</div>
-
 </div>
 
 <footer class="footerDashboard">
@@ -91,5 +89,4 @@
 </footer>
 
 </body>
-
 </html>
